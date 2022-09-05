@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mitsogad/Documents/GitHub/OrderStatusApi/OrderStatusApi.csproj": {}
+  },
+  "projects": {
+    "/home/mitsogad/Documents/GitHub/OrderStatusApi/OrderStatusApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mitsogad/Documents/GitHub/OrderStatusApi/OrderStatusApi.csproj",
+        "projectName": "OrderStatusApi",
+        "projectPath": "/home/mitsogad/Documents/GitHub/OrderStatusApi/OrderStatusApi.csproj",
+        "packagesPath": "/home/mitsogad/.nuget/packages/",
+        "outputPath": "/home/mitsogad/Documents/GitHub/OrderStatusApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mitsogad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.108/sdk/6.0.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

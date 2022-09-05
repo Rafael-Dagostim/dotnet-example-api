@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sKRL1lIThZP2EAb8J9TsoXkXVrdYgtZJ7ldjsPIk2+M=",
+  "Source": "OrderStatusApi",
+  "BasePath": "_content/OrderStatusApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

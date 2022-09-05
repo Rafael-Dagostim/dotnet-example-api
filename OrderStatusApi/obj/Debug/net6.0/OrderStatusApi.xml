@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderStatusApi</name>
+    </assembly>
+    <members>
+        <member name="M:OrderStatusApi.V1.Controllers.OrderStatusController.CalculateOrderStatusPercentage(OrderStatusApi.Interfaces.IOrderService,OrderStatusApi.Models.OrderStatusCounterDto)">
+            <summary>
+            Gera o percentual de cada "OrderStatus" com base no total de todos os tipos de status disponíveis.
+            </summary>
+            <param name="orderStatusCounter">Contagem de cada status em "OrderStatus" dentro do contexto local da função(Scooped).</param>
+            <returns>O Percentual de cada status em OrderStatus.</returns>
+            <response code="200">Retorna o percentual de cada status sobre o total.</response>
+            <response code="400">Caso a estrutura do JSON esteja mal formada ou os valores fornecidos não estiverem dentro do modelo.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.GetAll(OrderStatusApi.Interfaces.IOrderService)">
+            <summary>
+            Busca todos os os pedidos salvos no banco de dados.
+            </summary>
+            <returns>Uma lista com todos os pedidos encontrados.</returns>
+            <response code="200">Retorna uma lista com todos os pedidos encontrados.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.GetById(OrderStatusApi.Interfaces.IOrderService,System.Guid)">
+            <summary>
+            Busca um registro específico dentro do banco de dados com base no id.
+            </summary>
+            <param name="id">Código UUID de identificação do registro.</param>
+            <returns>O pedido com o id informado</returns>
+            <response code="200">Retorna o pedido.</response>
+            <response code="404">Caso não encontre o pedido.</response>
+            <response code="400">Caso haja um má formação na requisição.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.Create(OrderStatusApi.Interfaces.IOrderService,OrderStatusApi.Models.Order)">
+            <summary>
+            Cria um novo pedido e salva no banco de dados.
+            </summary>
+            <param name="order">Objeto pedido a ser salvo no banco</param>
+            <response code="201">Retorna o pedido que foi criado.</response>
+            <response code="400">Caso haja um má formação na requisição.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.Alter(OrderStatusApi.Interfaces.IOrderService,OrderStatusApi.Models.Order)">
+            <summary>
+            Atualiza um pedido salvo no banco de dados.
+            </summary>
+            <param name="order">Objeto pedido com as atualizações.</param>
+            <returns>O pedido com as novas alterações.</returns>
+            <response code="200">Retorna o pedido alterado.</response>
+            <response code="404">Caso não encontre o pedido a ser alterado.</response>
+            <response code="400">Caso haja um má formação na requisição.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.Delete(OrderStatusApi.Interfaces.IOrderService,System.Guid)">
+            <summary>
+            Deleta um registro de pedido com base no id informado.
+            </summary>
+            <param name="id">Código UUID de identificação do registro.</param>
+            <returns>Pedido deletado do banco.</returns>
+            <response code="200">Retorna o pedido deletado.</response>
+            <response code="404">Caso não encontre o pedido a ser deletado.</response>
+            <response code="400">Caso haja um má formação na requisição.</response>
+        </member>
+        <member name="M:OrderStatusApi.V2.Controllers.OrderController.CalculateStoredOrderStatusPercentage(OrderStatusApi.Interfaces.IOrderService)">
+            <summary>
+            Gera o percentual de cada "OrderStatus" com base nos registros salvos no banco de dados.
+            </summary>
+            <returns>O Percentual de cada status em OrderStatus.</returns>
+            <response code="200">Retorna o percentual de cada status sobre o total.</response>
+            <response code="400">Caso haja um má formação na requisição.</response>
+        </member>
+        <member name="F:OrderStatusApi.Enums.OrderStatus.Closed">
+            <summary>
+            Status de pedido fechado
+            </summary>
+        </member>
+        <member name="F:OrderStatusApi.Enums.OrderStatus.Open">
+            <summary>
+            Status de pedido aberto
+            </summary>
+        </member>
+        <member name="F:OrderStatusApi.Enums.OrderStatus.Blocked">
+            <summary>
+            Status de pedido bloqueado
+            </summary>
+        </member>
+    </members>
+</doc>
